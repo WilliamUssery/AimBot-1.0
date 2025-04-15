@@ -23,17 +23,17 @@ import win32api, win32con
 def click(x,y):
     win32api.SetCursorPos((x,y))
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN,0,0)
-    time.sleep(0.01)
+    time.sleep(0.1)
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP,0,0)
 
 # Here is a BOOLEAN that runs when until the 'q' key is pressed
 while keyboard.is_pressed('q') == False: # This is the EXIT
-    if pyautogui.pixel(1525, 800)[0] == 0: # These are the TILE Positions you might need to change.
-        click()
-    if pyautogui.pixel(1640, 800)[0] == 0:
-        click()
-    if pyautogui.pixel(1760, 800)[0] == 0:
-        click()
-    if pyautogui.pixel(1850, 800)[0] == 0:
-        click()
+    if pyautogui.pixel(1525, 600)[0] == 0: # These are the TILE Positions you might need to change.
+        click(1525, 600)
+    if pyautogui.pixel(1640, 600)[0] == 0:
+        click(1640, 600)
+    if pyautogui.pixel(1760, 600)[0] == 0:
+        click(1760, 600)
+    if pyautogui.pixel(1760, 600)[0] == 0:
+        click(1850, 600)
 
