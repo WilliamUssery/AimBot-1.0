@@ -31,3 +31,11 @@ We are now going to make parameters for the bot. You will need the (x,y) coordin
 
 Go the py file and look at it and follow the video! 
 
+## Stickman_Detection.py
+
+For this part of the video you need to save an image
+to the same location as you Stickman_Deteection.py file. Then trim the image down as much as possible to not include useless whitenoise that will interfier with the image. This is useful for later things like confidence levels of an image. 
+
+Read the stickman.py file and the comments with it. I was having trouble with the boolean that he made.
+
+The (grayscale = True) was a great way to reduce FPS along with reducing the search size down from full screen to a selected size for OpenCV to search. 
